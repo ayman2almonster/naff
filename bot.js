@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-console.log("Welcome Again !");
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+});
  
  client.on("guildMemberRemove", member => {
   member.createDM().then(function (channel) {
