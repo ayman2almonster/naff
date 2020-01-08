@@ -52,4 +52,4 @@ joined info-selfie
 **``) 
 }).catch(console.error)
 })
-client.login('MzUxODc5ODA3ODg3MzQzNjQ0.DIZB2g.gBlWvlUD0wnPq30jNKp36Co4AM4');
+client.login(process.env.BOT_TOKEN);
